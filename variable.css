@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "poppins";
+  src: url("./fonts/Poppins/Poppins-Regular.ttf"); }
+@font-face {
+  font-family: "yesevaone";
+  src: url("./fonts/Yeseva_One/YesevaOne-Regular.ttf"); }
+button {
+  cursor: pointer; }
+
+a {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px; }
+
+p {
+  font-family: "poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  opacity: 0.7; }
+
+h1 {
+  font-family: "yesevaone";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px; }
+
+h2 {
+  font-family: "yesevaone";
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 67px; }
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "poppins";
+  opacity: 0.7; }
+
+h4 {
+  font-family: "poppins";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px; }
+
+h5 {
+  font-family: "yesevaone";
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 166px;
+  color: #FFFFFF;
+  opacity: 0.1; }
+
+.sub__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  justify-content: center; }
+  .sub__title h3 {
+    display: flex;
+    align-self: flex-end;
+    border-top: 2px solid white; }
+
+.page__title-left {
+  width: 100%;
+  display: flex;
+  align-items: flex-start; }
+
+.page__title-right {
+  width: 100%;
+  display: flex;
+  align-items: flex-end; }
+
+.primary {
+  color: #00E0FF; }
+
+/*# sourceMappingURL=variable.css.map */
