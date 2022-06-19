@@ -52,17 +52,20 @@
       padding: 0 20px; }
     .page__wrapper .header {
       display: flex;
-      min-height: 110px; }
+      height: auto;
+      padding: 3% 0%; }
       .page__wrapper .header__nav {
         position: relative;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center; }
+        .page__wrapper .header__nav .nav__burger {
+          display: none; }
         .page__wrapper .header__nav .nav__items {
-          width: 22%;
+          width: 30%;
           display: flex;
-          justify-content: space-between; }
+          justify-content: flex-end; }
         .page__wrapper .header__nav .nav__links {
           width: 30%;
           display: flex;
@@ -92,40 +95,69 @@
             right: 0;
             margin: 0 auto; }
         .page__wrapper .header__nav .nav__search {
-          width: 30%;
+          width: 53px;
           position: relative;
-          display: flex; }
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          margin-right: 20px;
+          transition: ease-in-out 0.6s all; }
           .page__wrapper .header__nav .nav__search .search {
+            margin-left: 10px;
             box-sizing: border-box;
-            padding-left: 50px;
-            width: 268px;
+            width: 15vw;
             height: 48px;
             background: rgba(255, 255, 255, 0.2);
             border: 1px solid #00E0FF;
-            border-radius: 48px; }
-          .page__wrapper .header__nav .nav__search .search__icon img {
-            position: absolute;
-            top: 24px;
-            left: 16px;
-            right: -2rem;
-            transform: translateY(-50%); }
-        .page__wrapper .header__nav .nav__btn .search__btn {
-          position: relative;
-          width: 135px;
-          height: 48px;
-          background: rgba(255, 255, 255, 0.2);
-          border: 1px solid #00E0FF;
-          border-radius: 48px;
-          margin-left: 10px;
-          color: white;
-          text-transform: uppercase;
+            border-radius: 48px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            padding: 0 3%; }
+          .page__wrapper .header__nav .nav__search .search::placeholder {
+            color: #FFFFFF; }
+          .page__wrapper .header__nav .nav__search .search__icon {
+            height: 50px;
+            width: 50px;
+            min-width: 50px;
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid #00E0FF;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer; }
+            .page__wrapper .header__nav .nav__search .search__icon img {
+              height: 30px; }
+        .page__wrapper .header__nav .nav__btn {
+          transition: ease-in-out 0.6s all;
           display: flex;
           align-items: center;
-          padding-left: 50px; }
-          .page__wrapper .header__nav .nav__btn .search__btn img {
-            position: absolute;
-            top: -2px;
-            right: 88px; }
+          width: 50px;
+          height: 50px;
+          overflow: hidden; }
+          .page__wrapper .header__nav .nav__btn p {
+            color: #FFFFFF;
+            margin-left: 10px; }
+          .page__wrapper .header__nav .nav__btn .search__btn {
+            position: relative;
+            min-width: 50px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid #00E0FF;
+            border-radius: 48px;
+            color: white;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .page__wrapper .header__nav .nav__btn .search__btn img {
+              width: 120%;
+              height: 120%; }
+        .page__wrapper .header__nav .nav__btn:hover {
+          width: 40%; }
+        .page__wrapper .header__nav .nav__search:hover {
+          width: 70%; }
     .page__wrapper .hero {
       min-height: 87vh;
       display: flex;

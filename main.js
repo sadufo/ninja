@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded',e=>{
+    const burger = document.querySelector('.nav__burger')
+    const nav__links = document.querySelector('.nav__links')
+    const lines = document.querySelectorAll('.line')
+    burger.addEventListener('click',e=>{
+            lines[0].classList.toggle('top_anim')
+            lines[1].classList.toggle('rotate-x')
+            lines[2].classList.toggle('rotate-y')
+            lines[3].classList.toggle('top_anim')
+            nav__links.classList.toggle('top_menu')
+    })
     const animItem = document.querySelectorAll('.anim_item')
 
 animItem.forEach(el=>{
